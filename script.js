@@ -43,6 +43,8 @@ function showCoins(coins){
         card.addEventListener("mouseenter", () => {
 
             priceElement.innerText = "₹" + inrPrice.toLocaleString();
+            //when hover color change to magenta
+            priceElement.style.color = "magenta";
 
         });
 
@@ -50,6 +52,8 @@ function showCoins(coins){
         card.addEventListener("mouseleave", () => {
 
             priceElement.innerText = "$" + usdPrice;
+            //when hover remove color change to black
+            priceElement.style.color = "black";
 
         });
 
